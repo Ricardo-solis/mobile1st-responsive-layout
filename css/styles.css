@@ -1,0 +1,22 @@
+#main-header :first-child {
+    text-align: center;
+    margin: .2em;
+}
+
+#nav li {
+display: block;
+text-align: center;
+padding: .75em;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#main-header,
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
