@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo's Profile</title> 
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header id="main-header">
-        <h1>Ricardo Solis</h1>
+        <h1 id="name">Ricardo Solis</h1>
     <nav>
         <ul id="nav">
             <li><a href="index.html"><b>HOME</b></a></li>
@@ -21,31 +24,31 @@
         </ul>
     </nav>
 </header>
-    <main>
-        <figure id="profile-image">    
-        <img src="img/responsive-layout-profile.png" alt="Stock Profile Picture">
+    <main id="main-profile">
+        <figure >    
+        <img id="profile-image" src="img/responsive-layout-profile.png" alt="Stock Profile Picture">
         </figure>
-        <p>Hello! I'm a self taught front-end developer through Treehouse's Techdegree. I'm excited to showcase my skills and further progress my knowledge through on the job learning.</p>
+        <p id="profile-discrip">Hello! I'm a self taught front-end developer through Treehouse's Techdegree. I'm excited to showcase my skills and further progress my knowledge through on the job learning.</p>
     </main>
     <section id="portfolio">
-      <h2>PORTFOLIO</h2>
+      <h2><b>PORTFOLIO</b></h2>
         <figure>
-            <img src="img/portfolio-1.png" alt="project 1">
+            <img class="portfolio-img" src="img/portfolio-1.png" alt="project 1">
             <h3><b>Marketing Page</b></h3>
             <p>This project shows the front page of a marketing website meant for a specific business I'm insterested in.</p>
-            <img src="img/portfolio-2.png" alt="project 2">
+            <img class="portfolio-img" src="img/portfolio-2.png" alt="project 2">
             <h3><b>Search Page</b></h3>
             <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-            <img src="img/portfolio-3.png" alt="project 3">
+            <img class="portfolio-img" src="img/portfolio-3.png" alt="project 3">
             <h3><b>Travel App</b></h3>
             <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-            <img src="img/portfolio-4.png" alt="project 4">
+            <img class="portfolio-img" src="img/portfolio-4.png" alt="project 4">
             <h3><b>Map of Favorite Spots</b></h3>
             <p>This project uses mapping of apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-            <img src="img/portfolio-5.png" alt="project 5">
+            <img class="portfolio-img" src="img/portfolio-5.png" alt="project 5">
             <h3><b>Photo Gallery</b></h3>
             <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-            <img src="img/portfolio-6.png" alt="project 6">
+            <img class="portfolio-img" src="img/portfolio-6.png" alt="project 6">
             <h3><b>Calculator</b></h3>
             <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </figure>
@@ -53,17 +56,17 @@
     </section>
 
     <section id="contact">
-        <h2>CONTACT</h2>
+        <h2 id="contact">CONTACT</h2>
         <p>If you have any questions or are wanting to chat about what I've been working on, please feel free to reach out to me!</p>
 
-        <ul>
+        <ul id="contact-nav">
             <li>Phone <b>+1 &#40;111&#41; 555-1234</b></li>
             <li>Email <b>ricardogsolis&#64;gmail.com</b></li>
         </ul>
     </section>
 
     <footer>
-        <ul>
+        <ul id="end-nav">
             <li><b>Ricardo Solis</b></li>
             <li><a href="index.html"><b>BACK TO TOP</b></a></li>
         </ul>

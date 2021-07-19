@@ -1,6 +1,11 @@
-#main-header :first-child {
+*{
+    font-family: 'Open Sans', sans-serif;  
+}
+/* HEADER  */
+#name {
     text-align: center;
-    margin: .2em;
+    margin: .2em 0 .2em 0;
+    padding: 0;
 }
 
 #nav li {
@@ -13,10 +18,137 @@ a:link {
     text-decoration: none;
 }
 
-#main-header,
+/* MAIN */
+p {
+    text-align: center;
+}
+
+img#profile-image {
+    display: block;
+    width: 15em;
+    height: auto;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* SECTIONS */
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 2.4em;
+}
+
+figure {
+    margin: auto;
+}
+
+section #portfolio {
+    text-align: center;
+}
+
+img.portfolio-img {
+    display: block;
+    width: 22em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2#contact {
+    margin-top: 8em;
+}
+
+#contact-nav {
+    padding: 0em;
+}
+
+#contact-nav li {
+    display: block;
+}
+
+#end-nav li {
+    display: block;
+}
+
+#end-nav{
+    margin: 5.5em 0 2em 0;
+    padding: 0em;
+
+}
+
+/* FLEXBOX */
+
+#name {
+    display: flex;
+    justify-content: center;
+}
 #nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-grow: 1;
+}
+
+#contact-nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#end-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ///////////////MEDIA QUERIES\\\\\\\\\  */
+
+/* WHEN THE BROWSER IS ATLEAST 768PX */
+@media screen and (min-width: 768px) {
+    #name {
+        text-align: center;
+        margin: .2em 0 .2em 0;
+        padding-top: 1em;
+    }
+
+    #nav li {
+        text-align: center;
+        padding: .75em;
+    }  
+    
+    img#profile-image {
+        display: block;
+        width: 15em;
+        height: auto;
+        margin: 0em;
+        padding-left: 1em;
+    }
+
+    #main-profile {
+        padding: 1.5em;
+    }
+    
+
+/* ///FLEXBOX\\\ */
+    #name {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    }
+
+    #main-profile {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
