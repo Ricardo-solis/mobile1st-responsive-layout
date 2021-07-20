@@ -70,7 +70,7 @@ h2#contact {
     display: block;
 }
 
-#end-nav li {
+#hide768 {
     display: block;
 }
 
@@ -78,6 +78,10 @@ h2#contact {
     margin: 5.5em 0 2em 0;
     padding: 0em;
 
+}
+
+.show768 {
+    display: none;
 }
 
 /* FLEXBOX */
@@ -142,6 +146,24 @@ h2#contact {
     li {
         padding: .75em 0 .75em 0;
     }
+
+    #hide768{
+        display: none;
+    }
+
+    .show768 {
+        display: block;
+        margin: 1em;
+    }
+    
+    li#name-end {
+        display: block;
+        margin-left: 2em;
+    }
+
+    #end-nav {
+        margin: 3em 0 .65em 0;
+    }
     
 
 /* ///FLEXBOX\\\ */
@@ -205,5 +227,16 @@ h2#contact {
         flex-direction: column;
         flex-basis: 15%;
         
+    }
+
+    #end-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center ;
+    }
+
+    .show3 {
+        display: flex;
     }
 }
